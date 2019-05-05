@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Камень-ножницы-бумага</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="wrapper">
+    <h4 class="display-5">Камень-Ножницы-Бумага</h4>
+    <ul id="chat"></ul>
+    <div class="row">
+        <div class="buttons">
+        <button id="rock" type="button" class="btn btn-outline-info">Камень</button>
+        <button id="paper" type="button" class="btn btn-outline-secondary">Бумага</button>
+        <button id="scissors" type="button" class="btn btn-outline-danger">Ножницы</button>
+        </div>
+    </div>
+    <div class="row">
+        <form id="chat-form">
+            <input id="chat-input"/>
+            <button type="button" class="submit">Отправить</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="dist/client.js"></script>
+</body>
+</html>
